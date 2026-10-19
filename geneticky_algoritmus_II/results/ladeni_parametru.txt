@@ -1,0 +1,67 @@
+LADĚNÍ PARAMETRŮ (medián finální hodnoty z 10 běhů, D=10, 10000 ohodnocení)
+
+=== Sphere ===
+
+Binární (p_mut na bit)
+  p_mut=0.0016 | Binární IEEE 754: 2.423e-54 | Binární Fixed-point: 0.0001548 | Binární BCD: 0.0002923
+  p_mut=0.0031 | Binární IEEE 754: 3.302e-67 | Binární Fixed-point: 5.383e-05 | Binární BCD: 8.593e-05
+  p_mut=0.0063 | Binární IEEE 754: 2.809e-72 | Binární Fixed-point: 0.0001191 | Binární BCD: 0.0003692
+  p_mut=0.0100 | Binární IEEE 754: 2.101e-74 | Binární Fixed-point: 0.0003323 | Binární BCD: 0.001123
+
+Real + uniformní (p_mut na dimenzi)
+  p_mut=0.0200 | Real + uniformní mutace: 0.02852
+  p_mut=0.0500 | Real + uniformní mutace: 0.01195
+  p_mut=0.1000 | Real + uniformní mutace: 0.03498
+  p_mut=0.2000 | Real + uniformní mutace: 0.2405
+
+Real + Gauss (řádky: sigma jako podíl rozsahu, sloupce: p_mut na dimenzi)
+  sigma\p          0.05         0.1         0.2         0.5
+  0.001          0.9995      0.9919      0.2713      0.4261
+  0.01        7.278e-05   0.0001106    0.000785    0.005711
+  0.05        0.0006661    0.001517    0.008405      0.1489
+  0.1          0.002698    0.004396      0.0274      0.5604
+  0.2          0.006892    0.009637      0.1035       2.046
+
+=== Rosenbrock ===
+
+Binární (p_mut na bit)
+  p_mut=0.0016 | Binární IEEE 754: 8.286 | Binární Fixed-point: 8.323 | Binární BCD: 8.087
+  p_mut=0.0031 | Binární IEEE 754: 8.682 | Binární Fixed-point: 8.964 | Binární BCD: 7.997
+  p_mut=0.0063 | Binární IEEE 754: 8.672 | Binární Fixed-point: 7.754 | Binární BCD: 6.207
+  p_mut=0.0100 | Binární IEEE 754: 8.536 | Binární Fixed-point: 7.686 | Binární BCD: 6.866
+
+Real + uniformní (p_mut na dimenzi)
+  p_mut=0.0200 | Real + uniformní mutace: 6.807
+  p_mut=0.0500 | Real + uniformní mutace: 8.386
+  p_mut=0.1000 | Real + uniformní mutace: 8.983
+  p_mut=0.2000 | Real + uniformní mutace: 13.67
+
+Real + Gauss (řádky: sigma jako podíl rozsahu, sloupce: p_mut na dimenzi)
+  sigma\p          0.05         0.1         0.2         0.5
+  0.001           38.31       33.28       30.31       20.59
+  0.01            7.934       7.854       7.624       5.722
+  0.05             6.66       7.093       7.597       9.033
+  0.1             7.808       7.577       7.514       15.52
+  0.2             6.022       7.232       9.689       36.73
+
+=== Schwefel ===
+
+Binární (p_mut na bit)
+  p_mut=0.0016 | Binární IEEE 754: 395.1 | Binární Fixed-point: 208.5 | Binární BCD: 289.6
+  p_mut=0.0031 | Binární IEEE 754: 281.5 | Binární Fixed-point: 198.3 | Binární BCD: 258.8
+  p_mut=0.0063 | Binární IEEE 754: 260.4 | Binární Fixed-point: 129.9 | Binární BCD: 346.1
+  p_mut=0.0100 | Binární IEEE 754: 464.2 | Binární Fixed-point: 145.8 | Binární BCD: 253.9
+
+Real + uniformní (p_mut na dimenzi)
+  p_mut=0.0200 | Real + uniformní mutace: 23.31
+  p_mut=0.0500 | Real + uniformní mutace: 10.28
+  p_mut=0.1000 | Real + uniformní mutace: 16.48
+  p_mut=0.2000 | Real + uniformní mutace: 144.4
+
+Real + Gauss (řádky: sigma jako podíl rozsahu, sloupce: p_mut na dimenzi)
+  sigma\p          0.05         0.1         0.2         0.5
+  0.001           239.8       286.7       168.6       177.8
+  0.01            177.7       167.9       178.3       241.8
+  0.05            118.8       237.9         249       384.7
+  0.1             179.3       122.6         205       840.7
+  0.2             124.4       129.8       244.9        1155

@@ -1,0 +1,29 @@
+D=10, 10000 ohodnocení, 10 běhů, pop=100, elitismus=10%, selekce=rank
+Binární p_mut=0.00313/bit, Gauss p_mut=0.1, sigma=0.01 * rozsah, uniformní p_mut=0.05
+
+--- Sphere [-5.12, 5.12]^10 ---
+Varianta                          Best       Worst        Mean      Median         Std
+--------------------------------------------------------------------------------------
+Binární IEEE 754             2.492e-72   9.698e-55   9.698e-56   2.914e-65   2.909e-55
+Binární Fixed-point          1.359e-05   0.0003079   0.0001027   8.625e-05   8.747e-05
+Binární BCD                  2.415e-05   0.0003382   8.839e-05    6.15e-05   9.209e-05
+Real + Gauss mutace          3.655e-05   0.0003395   0.0001332    0.000105   8.263e-05
+Real + uniformní mutace       0.009354     0.04269     0.02201     0.02061     0.01093
+
+--- Rosenbrock [-2.048, 2.048]^10 ---
+Varianta                          Best       Worst        Mean      Median         Std
+--------------------------------------------------------------------------------------
+Binární IEEE 754                 5.475       8.731       7.609       7.908       1.074
+Binární Fixed-point              2.634       9.678       7.313       7.681       2.052
+Binární BCD                       3.15          13       7.998       7.918       2.352
+Real + Gauss mutace            0.09674       8.339       4.309       4.479       2.829
+Real + uniformní mutace          4.105       8.451       6.337       7.013       1.669
+
+--- Schwefel [-500.0, 500.0]^10 ---
+Varianta                          Best       Worst        Mean      Median         Std
+--------------------------------------------------------------------------------------
+Binární IEEE 754                 127.5       454.6       324.7       322.6       117.5
+Binární Fixed-point              132.4       484.9       286.4       248.3       129.4
+Binární BCD                      164.1       518.1       360.4       346.1       130.8
+Real + Gauss mutace            0.07586       769.9       246.8       167.9         223
+Real + uniformní mutace          1.334       30.16       14.43       13.01       7.728
